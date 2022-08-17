@@ -49,8 +49,9 @@ Interfaces são contratos que obrigam a classes que às implementam a ter determ
 É a característica das linguagens orientadas a objeto que permitem proteger os atributos ou metodos de determinados objetos, permitindo seu acesso de forma indireta.
 Por exemplo, pense em uma classe funcionária, ela tem um atributo salário, não é interessante que essa propriedade seja aumentada aleatoriamente, nem para mais, nem para menos. Exemplo:
 
-      Funcionario joao = new Funcionario();
-      joao.salario = 50.000;
+        Funcionario joao = new Funcionario();
+      
+        joao.salario = 50.000;
 
 Para evitar comportamentos inesperados, é recomendado deixar a propriedade salário com a visibilidade privada ( ela só pode ser vista e manipulada dentro da própria classe), e criar um método público chamado setSalario(), dentro desse método colocamos validações para por exemplo, não deixar diminuir o salário, ou não aumentar caso ele
 tenha tido um aumento a menos de 6 meses, etc. Exemplo: 
